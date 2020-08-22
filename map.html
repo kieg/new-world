@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_6518ff5c981149bc8035da95b6ab6555 {
+                #map_7292bca7579c4ba3a1aea959a8a43f0c {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,17 +35,17 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_6518ff5c981149bc8035da95b6ab6555" ></div>
+            <div class="folium-map" id="map_7292bca7579c4ba3a1aea959a8a43f0c" ></div>
         
 </body>
 <script>    
     
-            var map_6518ff5c981149bc8035da95b6ab6555 = L.map(
-                "map_6518ff5c981149bc8035da95b6ab6555",
+            var map_7292bca7579c4ba3a1aea959a8a43f0c = L.map(
+                "map_7292bca7579c4ba3a1aea959a8a43f0c",
                 {
-                    center: [45.372, -121.6972],
+                    center: [-11.5906166, 144.0332089],
                     crs: L.CRS.EPSG3857,
-                    zoom: 12,
+                    zoom: 3,
                     zoomControl: true,
                     preferCanvas: false,
                 }
@@ -55,84 +55,116 @@
 
         
     
-            var tile_layer_7dd2b9fe53fc42f88b840540272dd26a = L.tileLayer(
-                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
-                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_6518ff5c981149bc8035da95b6ab6555);
+            var tile_layer_7f9f59e822e54d80b4a92888873c6da9 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7292bca7579c4ba3a1aea959a8a43f0c);
         
     
-            var marker_db0433eb1746477baffd50e133b127c6 = L.marker(
-                [45.3288, -121.6625],
+            var feature_group_880189f82c094c92b424b8ca582d3936 = L.featureGroup(
                 {}
-            ).addTo(map_6518ff5c981149bc8035da95b6ab6555);
+            ).addTo(map_7292bca7579c4ba3a1aea959a8a43f0c);
         
     
-            var icon_c671494aa20b41e19b1adf1ea5001326 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
-            );
-            marker_db0433eb1746477baffd50e133b127c6.setIcon(icon_c671494aa20b41e19b1adf1ea5001326);
+            var marker_ec0bcfc28d624274a8aa9ad0a907b5f0 = L.marker(
+                [-11.5906166, 144.0332089],
+                {}
+            ).addTo(feature_group_880189f82c094c92b424b8ca582d3936);
         
     
-        var popup_26c7f1db264f47ae9f49705c1d579558 = L.popup({"maxWidth": "100%"});
+        var custom_icon_305acb12cbe541ab80f9d251e5a18d73 = L.icon({"iconSize": 40, "iconUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.flaticon.com%2Ficons%2Fpng%2F512%2F464%2F464955.png\u0026f=1\u0026nofb=1"});
+        marker_ec0bcfc28d624274a8aa9ad0a907b5f0.setIcon(custom_icon_305acb12cbe541ab80f9d251e5a18d73);
+        
+    
+        var popup_ac4f54d4b24f4614bc536786be2f46d8 = L.popup({"maxWidth": 200});
 
         
-            var html_f72cfe559a924cc5b5bc7ec691d32f55 = $(`<div id="html_f72cfe559a924cc5b5bc7ec691d32f55" style="width: 100.0%; height: 100.0%;">Mt. Hood Meadows</div>`)[0];
-            popup_26c7f1db264f47ae9f49705c1d579558.setContent(html_f72cfe559a924cc5b5bc7ec691d32f55);
+            var html_e6fb6fcf2d32447ebe7fd6c89959050e = $(`<div id="html_e6fb6fcf2d32447ebe7fd6c89959050e" style="width: 100.0%; height: 100.0%;"><b>Raine Island sea turtles are being born mostly female due to warming.</b> <br><br> Female baby turtles now outnumber males 116 to 1! <br> <br> <a href="Learn More">https://www.nationalgeographic.com/environment/2019/04/sea-turtle-sex-ratio-crisis-from-climate-change-has-hope/</a></div>`)[0];
+            popup_ac4f54d4b24f4614bc536786be2f46d8.setContent(html_e6fb6fcf2d32447ebe7fd6c89959050e);
         
 
-        marker_db0433eb1746477baffd50e133b127c6.bindPopup(popup_26c7f1db264f47ae9f49705c1d579558)
+        marker_ec0bcfc28d624274a8aa9ad0a907b5f0.bindPopup(popup_ac4f54d4b24f4614bc536786be2f46d8)
         ;
 
         
     
     
-            var marker_36e0407e9f5c45498cc0b3dcf27fd637 = L.marker(
-                [45.3311, -121.7113],
+            var feature_group_2d5ebf3579c8445394ec07622c3e3542 = L.featureGroup(
                 {}
-            ).addTo(map_6518ff5c981149bc8035da95b6ab6555);
+            ).addTo(map_7292bca7579c4ba3a1aea959a8a43f0c);
         
     
-            var icon_13db6c945b9e4cb3bf0c9b811ebf6515 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
-            );
-            marker_36e0407e9f5c45498cc0b3dcf27fd637.setIcon(icon_13db6c945b9e4cb3bf0c9b811ebf6515);
+            var feature_group_ba7551f1cde04c41b463d0e58a70115c = L.featureGroup(
+                {}
+            ).addTo(map_7292bca7579c4ba3a1aea959a8a43f0c);
         
     
-        var popup_618866f6a3f040c0a61f16b02b24869d = L.popup({"maxWidth": "100%"});
+            var marker_26c8c0ddbd594aeea7de9a16427c174f = L.marker(
+                [30.4416033, -91.1814585],
+                {}
+            ).addTo(feature_group_ba7551f1cde04c41b463d0e58a70115c);
+        
+    
+        var custom_icon_c35bd3f4844c4115b31bdf862d9a5101 = L.icon({"iconSize": 40, "iconUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.covervillemedia.com%2Fstatewidesolutions%2Fwp-content%2Fuploads%2F2015%2F06%2Fflood-icon.png\u0026f=1\u0026nofb=1"});
+        marker_26c8c0ddbd594aeea7de9a16427c174f.setIcon(custom_icon_c35bd3f4844c4115b31bdf862d9a5101);
+        
+    
+        var popup_aebb094e81eb4606853aca24054584a3 = L.popup({"maxWidth": 200});
 
         
-            var html_4fef8fa251014a048e21d066841df975 = $(`<div id="html_4fef8fa251014a048e21d066841df975" style="width: 100.0%; height: 100.0%;">Timberline Lodge</div>`)[0];
-            popup_618866f6a3f040c0a61f16b02b24869d.setContent(html_4fef8fa251014a048e21d066841df975);
+            var html_8a8af0f6e5754d28acd639005fa44e9b = $(`<div id="html_8a8af0f6e5754d28acd639005fa44e9b" style="width: 100.0%; height: 100.0%;"><b>Climate change helped cause massive floods in Louisiana.</b> <br><br> Climate change increases the intensity of precipitation because warm weather leads more water to evaporate forming wetter clouds. South Louisiana received nearly 30 inches of rain between August 10 and 17. 13 people died in the floods, which inundated Baton Rouge and destroyed 60,000 homes. <br> <br> <a href="Learn More">https://time.com/4482109/climate-change-louisiana-flooding/</a></div>`)[0];
+            popup_aebb094e81eb4606853aca24054584a3.setContent(html_8a8af0f6e5754d28acd639005fa44e9b);
         
 
-        marker_36e0407e9f5c45498cc0b3dcf27fd637.bindPopup(popup_618866f6a3f040c0a61f16b02b24869d)
+        marker_26c8c0ddbd594aeea7de9a16427c174f.bindPopup(popup_aebb094e81eb4606853aca24054584a3)
         ;
 
         
     
     
-            var marker_96c5871563214da5a60e2eef3517c67e = L.marker(
-                [45.33, -121.6823],
+            var feature_group_ad5c213a4d29496487f907ddd01c72f5 = L.featureGroup(
                 {}
-            ).addTo(map_6518ff5c981149bc8035da95b6ab6555);
+            ).addTo(map_7292bca7579c4ba3a1aea959a8a43f0c);
         
     
-            var icon_a0e09a6e5aab47d99886c978136cc0f1 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
-            );
-            marker_96c5871563214da5a60e2eef3517c67e.setIcon(icon_a0e09a6e5aab47d99886c978136cc0f1);
+            var marker_99d91f284f324c24bfa461b392f840ea = L.marker(
+                [48.62305328822785, -113.76222200000001],
+                {}
+            ).addTo(feature_group_ad5c213a4d29496487f907ddd01c72f5);
         
     
-        var popup_4a490d8618874b5eb374b54f26dde0ff = L.popup({"maxWidth": "100%"});
+        var custom_icon_4fb1b034775449afa79d3fe174fabb33 = L.icon({"iconSize": 40, "iconUrl": "https://cdn2.iconfinder.com/data/icons/world-disaster-line-color-climate-change/512/Melting_Glaciers-512.png"});
+        marker_99d91f284f324c24bfa461b392f840ea.setIcon(custom_icon_4fb1b034775449afa79d3fe174fabb33);
+        
+    
+        var popup_49f04e25d86e4f508c56d35929e2edf7 = L.popup({"maxWidth": 200});
 
         
-            var html_58ed5cb9a76849709ce3ee2ecb94e1e5 = $(`<div id="html_58ed5cb9a76849709ce3ee2ecb94e1e5" style="width: 100.0%; height: 100.0%;">Some Other Location</div>`)[0];
-            popup_4a490d8618874b5eb374b54f26dde0ff.setContent(html_58ed5cb9a76849709ce3ee2ecb94e1e5);
+            var html_38f78d13746448c9b5cac27e6d700c55 = $(`<div id="html_38f78d13746448c9b5cac27e6d700c55" style="width: 100.0%; height: 100.0%;"><b>Sperry Glacier has shrunk from more than 800 acres (320 hectares) to 100 acres. </b> <br><br> When President Taft created Glacier National Park in 1910, it was home to an estimated 150 glaciers. Since then the number has decreased to fewer than 30, and most of those remaining have shrunk in area by two-thirds. It is predicted that within 30 years most if not all of the park's namesake glaciers will disappear. <br> <br> <a href="Learn More">https://www.nationalgeographic.com/environment/global-warming/big-thaw/</a></div>`)[0];
+            popup_49f04e25d86e4f508c56d35929e2edf7.setContent(html_38f78d13746448c9b5cac27e6d700c55);
         
 
-        marker_96c5871563214da5a60e2eef3517c67e.bindPopup(popup_4a490d8618874b5eb374b54f26dde0ff)
+        marker_99d91f284f324c24bfa461b392f840ea.bindPopup(popup_49f04e25d86e4f508c56d35929e2edf7)
         ;
 
         
     
+    
+            var layer_control_bc463d647ac841189189098b4965b2b9 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_7f9f59e822e54d80b4a92888873c6da9,
+                },
+                overlays :  {
+                    "Fauna" : feature_group_880189f82c094c92b424b8ca582d3936,
+                    "Flora" : feature_group_2d5ebf3579c8445394ec07622c3e3542,
+                    "Ecosystem" : feature_group_ba7551f1cde04c41b463d0e58a70115c,
+                    "Melting Ice" : feature_group_ad5c213a4d29496487f907ddd01c72f5,
+                },
+            };
+            L.control.layers(
+                layer_control_bc463d647ac841189189098b4965b2b9.base_layers,
+                layer_control_bc463d647ac841189189098b4965b2b9.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_7292bca7579c4ba3a1aea959a8a43f0c);
+        
 </script>
