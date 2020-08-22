@@ -1,5 +1,6 @@
 import folium
 
+
 if __name__ == "__main__":
     m = folium.Map(
         location=[45.372, -121.6972],
